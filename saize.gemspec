@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'matsuya/version'
+require 'saize/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "matsuya"
-  spec.version       = Matsuya::VERSION
+  spec.name          = "saize"
+  spec.version       = Saize::VERSION
   spec.authors       = ["Toshiaki Asai"]
   spec.email         = ["toshi.alternative@gmail.com"]
   spec.summary       = "I'm hungry. gyu-meshi! gyu-meshi!"
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
-  spec.executables   = 'matsuya'
+  spec.executables   = 'saize'
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 

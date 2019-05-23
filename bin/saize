@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 # coding: utf-8
 
-require 'matsuya'
+require 'saize'
 require 'optparse'
-okano = 0.1
+okano = 0.9
 OptionParser.new do |opt|
-  opt.banner = "Usage: matsuya [options]"
+  opt.banner = "Usage: saize [options]"
   opt.separator "options are:"
   opt.on('-h', '--help', "Show this message") do
     puts opt
@@ -23,7 +23,7 @@ OptionParser.new do |opt|
 end
 
 if ARGV.size > 0 && ARGV[0].match(/^[0-9]+(?:\.[0-9]+)?$/)
-  puts Matsuya.order(ARGV[0].to_f)
+  puts Saize.order(ARGV[0].to_f)
 else
-  puts Matsuya.order(okano: okano)
+  puts Saize.order(okano: okano)
 end
