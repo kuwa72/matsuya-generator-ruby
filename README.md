@@ -1,6 +1,6 @@
 # Saize
 
-folkd from [Matsuya](https://github.com/toshia/matsuya-generator-ruby)
+forkd from [Matsuya](https://github.com/toshia/matsuya-generator-ruby)
 
 既存のサイゼリヤのメニューを参考にして、ありそうなメニューを適当に作ります。たまに実在するメニューも出てきます。
 
