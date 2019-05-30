@@ -1,13 +1,15 @@
-# Matsuya
+# Saize
 
-既存の松屋のメニューを参考にして、ありそうなメニューを適当に作ります。たまに実在するメニューも出てきます。
+folkd from [Matsuya](https://github.com/toshia/matsuya-generator-ruby)
+
+既存のサイゼリヤのメニューを参考にして、ありそうなメニューを適当に作ります。たまに実在するメニューも出てきます。
 
 ## Installation
 
 bundle
 
 ```ruby
-gem 'matsuya'
+gem 'saize'
 ```
 
 こうじゃ
@@ -16,22 +18,22 @@ gem 'matsuya'
 
 こっちでもいいかな
 
-    $ gem install matsuya
+    $ gem install saize
 
 ## Usage
 ### シェルから使う
 `gem install`した場合は、以下のようなコマンドを入力するとなにか出てきます。
 ```
-% matsuya
-牛めし
-% matsuya
-牛めし
-% matsuya
-めし
-% matsuya -o 0.8
-オリジナルチリソースハンバーグ定食
-% matsuya
-プレミアムカルビキムカル丼
+% saize
+ミルクシチリアアンチョビのペペロンチーノ
+% saize
+ベルデッキオ（辛口・中）
+% saize
+ランブルスコセッコ（赤）辛口
+% saize -o 0.8
+カプチーノ(アイスケーキ)(季節限定)
+% saize
+スモールライス
 %
 ```
 キツい
@@ -40,24 +42,24 @@ gem 'matsuya'
 
 ### ライブラリとして
 ```ruby
-require 'matsuya'
+require 'saize'
 
-puts Matsuya.order
-puts Matsuya.order(0)
-puts Matsuya.order(0.8)
+puts Saize.order
+puts Saize.order(0)
+puts Saize.order(0.8)
 ```
 
 output:
 
 ```
-キムチチゲ膳（プレミアム牛肉使用）
-プレミアム旨辛ネギ塩豚バラ生姜焼定食
-シャンピニオンソース豆腐カレー
+ガーリックトースト
+キャンティルフィナリゼルパ（辛口・重い）
+若鶏のサラダ
 ```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/matsuya/fork )
+1. Fork it ( https://github.com/[my-github-username]/saizeriya-generator-ruby/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

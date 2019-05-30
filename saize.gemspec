@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Toshiaki Asai"]
   spec.email         = ["toshi.alternative@gmail.com"]
   spec.summary       = "I'm hungry. gyu-meshi! gyu-meshi!"
-  spec.description   = "Generate Okanic Matsuya food."
-  spec.homepage      = "https://github.com/toshia/matsuya-generator-ruby"
+  spec.description   = "Generate Okanic Saizeriya food."
+  spec.homepage      = "https://github.com/kuwa72/saizeriya-generator-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
